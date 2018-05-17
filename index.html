@@ -12,6 +12,14 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
+  html body {
+    background-color: #ffd344;
+  }
+  #first {
+    width: 100%;
+    height: 100%;
+    transform: rotate(90deg);
+  }
   body {
       font: 400 15px Lato, sans-serif;
       line-height: 1.8;
@@ -32,8 +40,9 @@
       margin-bottom: 30px;
   }  
   .jumbotron {
-      background-color: #44baff;
-      color: #fff;
+      background-image: url("https://images.unsplash.com/photo-1474401915596-3c5adf84ef01?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0c18c5d9999d7908e9db713517ce0e20&auto=format&fit=crop&w=2100&q=80");
+      background-size: 100% 100%;
+      color: rgb(255, 255, 255);
       padding: 100px 25px;
       font-family: Montserrat, sans-serif;
   }
@@ -41,15 +50,20 @@
       padding: 60px 50px;
   }
   .bg-grey {
-      background-color: #f6f6f6;
+    display: inline-block;
+    width: 75%;
+    border: 5px solid white;
+    text-align: center;
+    border-radius: 0%;
   }
   .logo-small {
-      color: #44baff;
+      color: #fcb902;
       font-size: 50px;
   }
   .logo {
-      color: #44baff;
+      color: #858b8f;
       font-size: 200px;
+      background-image: url("IMG_2579.jpeg");
   }
   .thumbnail {
       padding: 0 0 15px 0;
@@ -116,12 +130,12 @@
   }
   .panel-footer .btn {
       margin: 15px 0;
-      background-color: #44baff;
+      background-color: #ffd344;
       color: #fff;
   }
   .navbar {
       margin-bottom: 0;
-      background-color: #44baff;
+      background-color: #ffd344;
       z-index: 9999;
       border: 0;
       font-size: 12px !important;
@@ -134,7 +148,7 @@
       color: #fff !important;
   }
   .navbar-nav li a:hover, .navbar-nav li.active a {
-      color: #44baff !important;
+      color: #ffd344 !important;
       background-color: #fff !important;
   }
   .navbar-default .navbar-toggle {
@@ -154,6 +168,7 @@
       -webkit-animation-duration: 1s;
       visibility: visible;
   }
+  
   @keyframes slide {
     0% {
       opacity: 0;
@@ -205,7 +220,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">JW</a>
+      <a class="navbar-brand" href="C:\Users\STUDENT\Desktop\Personal\Logo 4-30.png">JW</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -219,30 +234,32 @@
 
 <div class="jumbotron text-center">
   <h1>Jacob Wright</h1> 
-  <p>Welcome to My Portfolio!</p> 
+  <p>Welcome to My Portfolio!</p>
 </div>
 
 <!-- Container (About Section) -->
-<div id="about" class="container-fluid">
+  <div id="about" class="container-fluid">
   <div class="row">
     <div class="col-sm-8">
       <h2>About Me</h2><br>
       <h4>My name is Jacob Wright and I am an aspiring Programmer.</h4><br>
       <p>
-        I was born January 6, 2000, in South Jordan, Utah.  I have 4 brothers and 1 sister.  
-        I graduated from Itineris Early College High School in the Class of 2018 with my Associate's Degree 
-        from Salt Lake Community College.  My hobbies are learning and weightlifting.  
+        Determined, Curious, and Hardworking. 
+        I graduated from Salt Lake Community College with an Associate's Degree while in High School. 
+        I enjoy reading, programming, web development, exercising and learning.  I will be attending BYU
+        fall of 2018. I plan on graduating Winter 2020 with my BS Computer Science, with a focus on software engineering.
       </p>
       <!-- <br><button class="btn btn-default btn-lg">Get in Touch</button> -->
     </div>
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-user logo"></span>
+      <img id="first" src="IMG_2579.jpeg">
     </div>
   </div>
 </div>
 
 <!-- Container (Services Section) -->
-<div id="services" class="container-fluid text-center">
+<section style="background-color: #fff">
+<div id="services" class="container-fluid text-center" >
   <h2>Portfolio</h2>
   <h4>What I've Done</h4>
   <br>
@@ -250,12 +267,12 @@
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-off logo-small"></span>
       <h4>Github</h4>
-      <a href="https://github.com/jacobcwright">My Github</a>
+      <a href="https://github.com/jacobcwright">Click Here</a>
     </div>
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-file logo-small"></span>
       <h4>Resume</h4>
-      <a href="resume.html">Click Here </a>
+      <a href="Resume_5-7.pdf">Click Here </a>
     </div>
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-pencil logo-small"></span>
@@ -263,6 +280,7 @@
       <a href="design.html">Click Here </a>
     </div>
   </div>
+</section>
   <br><br>
   <!-- <div class="row slideanim">
     <div class="col-sm-4">
@@ -323,16 +341,21 @@
 
 
 <!-- Container (Contact Section) -->
+<section style="text-align: center">
 <div id="contact" class="container-fluid bg-grey">
   <h2 class="text-center">CONTACT</h2>
   <div class="row">
-    <div class="col-sm-5">
-      <p>Contact us and we'll get back to you within 24 hours.</p>
+    <div >
+      <p>Contact me and I'll get back to you within 24 hours.</p>
       <p><span class="glyphicon glyphicon-map-marker"></span> South Jordan, Ut</p>
       <p><span class="glyphicon glyphicon-phone"></span> (385)-237-8875</p>
       <p><span class="glyphicon glyphicon-envelope"></span> jacob.wright.ut@gmail.com</p>
+      <a href="https://www.linkedin.com/in/jacob-wright-829074163/"><span class="glyphicon glyphicon-user"></span>My LinkedIn</a>
     </div>
-    <div class="col-sm-7 slideanim">
+    </div>
+    </div>
+  </section>
+    <!-- <div class="col-sm-7 slideanim">
       <div class="row">
         <div class="col-sm-6 form-group">
           <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
@@ -349,14 +372,13 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 
 <footer class="container-fluid text-center" id="footer">
   <a href="#myPage" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
-  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p>
 </footer>
 
 <script>
